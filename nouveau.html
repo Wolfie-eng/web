@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset ="utf-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Quotes</title>
+	<style>
+	  body{margin:0;
+	       font-family:'poppins',arial, sans-serif;
+		   background-color:#4E342E;
+           color:#FFFFFF;
+		   line-height:1.6;}
+		   
+	  header {background-color: #8C6E63;
+              padding: 20px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;}
+
+      header img {height: 50px;}
+	
+	  nav {display: flex;
+           gap: 15px;}
+
+      nav a {color: #FFFFFF;
+             text-decoration: none;
+             font-size: 16px;
+             transition: color 0.3s ease;}
+
+      nav a:hover {color: #F5E0C3;}
+
+      .hero {text-align: center;
+			 padding: 50px 20px;
+			 background: #F5E0C3;
+			 color: #4E342E;}
+
+      .container {padding: 20px;
+				  margin: 20px auto;
+				  max-width: 800px;
+                  background: #8C6E63; /* Marron moyen */
+                  border-radius: 10px;
+                  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);}
+
+      .container h2 {text-align: center;
+					 color: #FFFFFF;}
+
+      .testimony {background: #F5E0C3;
+                  color: #4E342E;
+				  margin: 15px 0;
+				  padding: 15px;
+				  border-radius: 8px;
+				  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);}
+				  
+	  .comment {background-color: #F9F9F9;
+                color: #4E342E;
+                margin: 5px 0;
+                padding: 8px;
+                border-radius: 5px;}
+
+
+       footer {text-align: center;
+               background: #4E342E;
+               padding: 10px 0;
+               color: #FFFFFF;
+               font-size: 14px;}
+
+       button {background-color: #4E342E;
+			   color: #FFFFFF;
+               border: none;
+               padding: 10px 20px;
+               font-size: 16px;
+               border-radius: 5px;
+               cursor: pointer;
+               transition: background-color 0.3s ease;}
+
+       button:hover {background-color: #8C6E63;}
+	   
+	  .comment-box {margin-bottom: 10px;
+                    padding: 10px;
+                    width: 100%;
+                    border-radius: 5px;
+                    border: 1px solid #ddd;}
+
+    </style>
+ </head>
+  
+  <body>
+  <!-- En-tête -->
+  <header>
+    <img src="./img/quote.jpg" alt="Logo">
+    <nav>
+      <a href="./testimonies.html">Témoignages</a>
+      <a href="#dates">Dates importantes</a>
+      <a href="#gallery">Galerie</a>
+      <a href="#about">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+<!-- Section Héro -->
+  <section class="hero">
+    <h1>Bienvenue sur Quotes</h1>
+    <p>Un espace sûr pour partager et entendre des histoires importantes.</p>
+  </section>
+
+  <!-- Témoignages -->
+  <section id="testimonies" class="container">
+    <h2>Témoignages</h2>
+    <div id="testimonies-list">
+    </div>
+    <h3>Ajouter un témoignage</h3>
+    <input type="text" id="testimony-title" class="comment-box" placeholder="Titre du témoignage" />
+    <textarea id="testimony-body" class="comment-box" placeholder="Écrivez votre témoignage ici..." rows="4"></textarea>
+    <button onclick="submitTestimony()">Soumettre un témoignage</button>
+  </section>
+
+
+<!-- Dates importantes -->
+  <section id="dates" class="container">
+    <h2>Dates Importantes</h2>
+    <p>25 novembre : Journée internationale pour l'élimination de la violence à l'égard des femmes.</p>
+    <p>21 mars : Journée internationale pour l'élimination de la discrimination raciale.</p>
+  </section>
+
+ <!-- Galerie -->
+  <section id="gallery" class="container">
+    <h2>Galerie</h2>
+    <p>Photos à venir.</p>
+  </section>
+
+<!-- À propos -->
+  <section id="about">
+    <h2>À propos</h2>
+    <p>Quotes est un projet dédié à amplifier les voix des survivants d'injustices sociales et à sensibiliser sur des sujets importants.</p>
+  </section>
+
+<!-- Contact -->
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <p>suivez-nous sur Instagram:</p> <a href="https;//instagram.com/nom_du_compte" target="_blank">
+	<img src="instagram-icon.png" alt="instagram" style="width:40px; height: 40px;">
+	</a>
+  </section>
+
+<!-- Pied de page -->
+  <footer>
+    <p>&copy; 2024 Quotes. Tous droits réservés.</p>
+  </footer>
+<script>
+  // Liste des témoignages (stockée en mémoire)
+  let testimonies = [];
+
+  // Fonction pour afficher les témoignages
+  function displayTestimonies() {
+    const testimoniesList = document.getElementById('testimonies-list');
+    testimoniesList.innerHTML = ''; // On vide la liste avant de la remplir
+
+    testimonies.forEach((testimony, index) => {
+      const testimonyDiv = document.createElement('div');
+      testimonyDiv.className = 'testimony';
+      testimonyDiv.innerHTML = `
+        <h3>${testimony.title}</h3>
+        <p>${testimony.body}</p>
+        <div class="comment-section">
+          <input type="text" class="comment-box" placeholder="Ajouter un commentaire..." id="comment-input-${index}" />
+          <button onclick="submitComment(${index})">Soumettre un commentaire</button>
+          <div id="comments-${index}"></div>
+        </div>
+		<button onclick="deleteTestimony(${index})">Supprimer le témoignage</button>
+      `;
+      testimoniesList.appendChild(testimonyDiv);
+    });
+  }
+
+  // Fonction pour soumettre un témoignage
+  function submitTestimony() {
+    const title = document.getElementById('testimony-title').value.trim();
+    const body = document.getElementById('testimony-body').value.trim();
+
+    if (title && body) {
+      testimonies.push({ title, body, comments: [] }); // Ajout d'une clé "comments" pour chaque témoignage
+      displayTestimonies(); // Rafraîchit l'affichage
+      document.getElementById('testimony-title').value = '';
+      document.getElementById('testimony-body').value = '';
+    } else {
+      alert('Veuillez remplir les deux champs pour ajouter un témoignage.');
+    }
+  }
+  //Pour supprimer commentaire
+  function deleteTestimony(index) {
+    testimonies.splice(index, 1);
+	displayTestimonies();
+	}
+
+  // Fonction pour soumettre un commentaire
+  function submitComment(testimonyIndex) {
+    const commentInput = document.getElementById(`comment-input-${testimonyIndex}`);
+    const commentText = commentInput.value.trim();
+
+    if (commentText) {
+      const testimony = testimonies[testimonyIndex];
+      testimony.comments.push(commentText); // Ajoute le commentaire au témoignage correspondant
+
+      // Ajoute le commentaire à la section correspondante
+      const commentsSection = document.getElementById(`comments-${testimonyIndex}`);
+      const commentDiv = document.createElement('div');
+      commentDiv.className = 'comment';
+      commentDiv.textContent = commentText;
+
+      commentsSection.appendChild(commentDiv);
+      commentInput.value = ''; // Vide le champ de saisie
+    } else {
+      alert('Veuillez saisir un commentaire avant de le soumettre.');
+    }
+  }
+
+  // Charge les témoignages existants (fonctionnalité optionnelle)
+  function loadTestimonies() {
+    // Simule des données déjà existantes
+    testimonies = [
+      { title: 'Exemple 1', body: 'Voici un témoignage exemple.', comments: ['Super témoignage !'] },
+      { title: 'Exemple 2', body: 'Un autre témoignage inspirant.', comments: [] }
+    ];
+    displayTestimonies();
+  }
+
+  // Charger les témoignages au chargement de la page
+  window.onload = () => {
+    loadTestimonies();
+  };
+
+</script>
+
+  </body>
+</html> 
