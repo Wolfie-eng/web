@@ -1,1 +1,29 @@
+# Ignorer tous les fichiers .log
+*.log
+
+# Ignorer le dossier node_modules
+node_modules/
+
+# Ignorer un fichier spécifique
+config.ini
+
+# Ignorer tous les fichiers .tmp dans le dossier racine
+/*.tmp
+
+# Ignorer tous les fichiers .pdf dans n'importe quel dossier
+**/*.pdf
+
+# Ignorer le contenu du dossier build, mais pas le dossier lui-même
+build/*
+
+# Ignorer tous les fichiers .txt sauf important.txt
+*.txt
+!important.txt
+
+# Ignorer tous les fichiers dans le dossier logs sauf .gitkeep
+logs/*
+!logs/.gitkeep
+
+# Votre contenu gitignore
+
 /cours
