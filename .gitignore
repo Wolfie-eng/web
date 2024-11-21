@@ -1,29 +1,41 @@
+# Fichier .gitignore
+
+# Ce fichier spécifie les fichiers et dossiers que Git doit ignorer.
+# Son utilité :
+# 1. Évite le suivi de fichiers non nécessaires (builds, logs, etc.)
+# 2. Protège les informations sensibles (clés API, mots de passe)
+# 3. Réduit la taille du dépôt et améliore les performances
+# 4. Garde le dépôt propre et organisé
+# 5. Facilite la collaboration en ignorant les fichiers spécifiques à l'environnement local
+
+# Exemples d'utilisation :
+
 # Ignorer tous les fichiers .log
 *.log
 
 # Ignorer le dossier node_modules
 node_modules/
 
-# Ignorer un fichier spécifique
-config.ini
+# Ignorer les fichiers de configuration spécifiques à l'environnement
+.env
+config.local.js
 
-# Ignorer tous les fichiers .tmp dans le dossier racine
-/*.tmp
+# Ignorer les fichiers de build
+/build/
+/dist/
 
-# Ignorer tous les fichiers .pdf dans n'importe quel dossier
-**/*.pdf
+# Ignorer les fichiers temporaires
+*.tmp
+*.temp
 
-# Ignorer le contenu du dossier build, mais pas le dossier lui-même
-build/*
+# Ignorer les fichiers système
+.DS_Store
+Thumbs.db
 
-# Ignorer tous les fichiers .txt sauf important.txt
-*.txt
-!important.txt
+# Ignorer les fichiers d'IDE spécifiques
+.vscode/
+.idea/
 
-# Ignorer tous les fichiers dans le dossier logs sauf .gitkeep
-logs/*
-!logs/.gitkeep
 
-# Votre contenu gitignore
-
+# Vous pouvez ajouter d'autres règles spécifiques à votre projet ci-dessous
 /cours
