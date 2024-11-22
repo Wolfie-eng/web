@@ -65,3 +65,33 @@
     if (commentText) {
       const testimony = testimonies[testimonyIndex];
       testimony.comments.push(commentText);
+
+  // Ajoute le commentaire à la section correspondante
+      const commentsSection = document.getElementById(`comments-${testimonyIndex}`);
+      const commentDiv = document.createElement('div');
+      commentDiv.className = 'comment';
+      commentDiv.textContent = commentText;
+
+      commentsSection.appendChild(commentDiv);
+      commentInput.value = ''; // Vide le champ de saisie
+    } else {
+      alert('Veuillez saisir un commentaire avant de le soumettre.');
+    }
+  }
+
+  // Charge les témoignages existants (fonctionnalité optionnelle)
+  function loadTestimonies() {
+    // Simule des données déjà existantes
+    testimonies = [
+      { title: 'Exemple 1', body: 'Voici un témoignage exemple.', comments: ['Super témoignage !'] },
+      { title: 'Exemple 2', body: 'Un autre témoignage inspirant.', comments: [] }
+    ];
+    displayTestimonies();
+  }
+
+  // Charger les témoignages au chargement de la page
+  window.onload = () => {
+    loadTestimonies();
+  };
+
+</script>
