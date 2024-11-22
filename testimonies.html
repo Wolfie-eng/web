@@ -12,3 +12,28 @@
     <textarea id="testimony-body" class="comment-box" placeholder="Écrivez votre témoignage ici..." rows="4"></textarea>
     <button onclick="submitTestimony()">Soumettre un témoignage</button>
     </body>
+   <script>
+  // Liste des témoignages (stockée en mémoire)
+  let testimonies = [];
+
+  // Fonction pour afficher les témoignages
+  function displayTestimonies() {
+    const testimoniesList = document.getElementById('testimonies-list');
+    testimoniesList.innerHTML = ''; // On vide la liste avant de la remplir
+
+    testimonies.forEach((testimony, index) => {
+      const testimonyDiv = document.createElement('div');
+      testimonyDiv.className = 'testimony';
+      testimonyDiv.innerHTML = `
+        <h3>${testimony.title}</h3>
+        <p>${testimony.body}</p>
+        <div class="comment-section">
+          <input type="text" class="comment-box" placeholder="Ajouter un commentaire..." id="comment-input-${index}" />
+          <button onclick="submitComment(${index})">Soumettre un commentaire</button>
+          <div id="comments-${index}"></div>
+        </div>
+		<button onclick="deleteTestimony(${index})">Supprimer le témoignage</button>
+      `;
+      testimoniesList.appendChild(testimonyDiv);
+    });
+  }
