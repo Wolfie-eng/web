@@ -37,3 +37,31 @@
       testimoniesList.appendChild(testimonyDiv);
     });
   }
+// Fonction pour soumettre un témoignage
+  function submitTestimony() {
+    const title = document.getElementById('testimony-title').value.trim();
+    const body = document.getElementById('testimony-body').value.trim();
+
+    if (title && body) {
+      testimonies.push({ title, body, comments: [] }); // Ajout d'une clé "comments" pour chaque témoignage
+      displayTestimonies(); // Rafraîchit l'affichage
+      document.getElementById('testimony-title').value = '';
+      document.getElementById('testimony-body').value = '';
+    } else {
+      alert('Veuillez remplir les deux champs pour ajouter un témoignage.');
+    }
+  }
+  //Pour supprimer commentaire
+  function deleteTestimony(index) {
+    testimonies.splice(index, 1);
+	displayTestimonies();
+	}
+
+  // Fonction pour soumettre un commentaire
+  function submitComment(testimonyIndex) {
+    const commentInput = document.getElementById(`comment-input-${testimonyIndex}`);
+    const commentText = commentInput.value.trim();
+
+    if (commentText) {
+      const testimony = testimonies[testimonyIndex];
+      testimony.comments.push(commentText);
