@@ -24,18 +24,21 @@
         nav a:hover {color: #F5E0C3; /* Crème clair */}
 
         /* Hero Section */
-        .hero {
+     .hero {
     position: relative; /* Nécessaire pour positionner la superposition */
     text-align: center;
     padding: 80px 20px;
-    background-position: center; /* Centre l'image */
+    background-image: url('./img/fleur.jpg'); /* Image de fond */
     background-size: cover; /* L'image couvre toute la section */
+    background-position: center; /* Centre l'image */
+    background-attachment: fixed; /* Rend l'image fixe en arrière-plan */
     color: #4E342E; /* Couleur marron clair pour le texte */
     font-size: 1.5em;
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     border-bottom: 3px solid #4E342E;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+    height: 100vh; /* S'assure que la section prend toute la hauteur de la fenêtre */
 }
 
 /* Contenu du texte */
