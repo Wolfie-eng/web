@@ -24,19 +24,9 @@
         nav a:hover {color: #F5E0C3; /* Crème clair */}
 
         /* Hero Section */
-        .hero {text-align: center;
-               padding: 50px 20px;
-               background-color: #F5E0C3; /* Crème */
-               color: #4E342E; /* Marron clair */
-               font-size: 1.5em;}
-
-       .logo-container { display: inline-flex; /* Regroupe image et texte */
-                         align-items: center; /* Aligne verticalement l'image et le texte */
-                         gap: 5px; /* Espace entre l'image et "uotes" */}
-
-       .hero-logo { height: 50px; /* Taille contrôlée */
-                    width: auto; /* Respecte les proportions */}
-
+        .hero { text-align: center;
+                padding: 80px 20px;
+               background-
 /* Container */
         .container {padding: 20px;
                     margin: 20px auto;
