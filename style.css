@@ -118,3 +118,60 @@
                  transition: background-color 0.3s ease;}
 
         button:hover {background-color: #8C6E63; /* Marron moyen */}
+
+/* Section des catégories */
+.categories {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #F5E0C3; /* Couleur douce */
+}
+
+.categories h2 {
+    font-size: 2em;
+    color: #4E342E; /* Marron foncé */
+    margin-bottom: 40px;
+}
+
+/* Conteneur des cartes de catégories */
+.category-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Pour que les cartes s'ajustent sur plusieurs lignes si nécessaire */
+}
+
+/* Style des cartes */
+.category-card {
+    background-color: #4E342E; /* Couleur du fond */
+    color: #FFFFFF; /* Texte blanc */
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+/* Effet de survol des cartes */
+.category-card:hover {
+    transform: scale(1.1); /* Agrandir la carte au survol */
+    background-color: #8C6E63; /* Changer la couleur de fond au survol */
+}
+
+/* Responsivité : pour petits écrans */
+@media (max-width: 768px) {
+    .category-container {
+        flex-direction: column; /* Affiche les cartes en colonne sur les petits écrans */
+        align-items: center;
+    }
+
+    .category-card {
+        width: 100%;
+        max-width: 250px;
+        margin-bottom: 20px; /* Espacement entre les cartes */
+    }
+}
