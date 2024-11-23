@@ -28,10 +28,11 @@
                padding: 50px 20px;
                background: #F5E0C3; /* Crème */
                color: #4E342E; /* Marron clair */}
-        .hero-logo { height: 50px;
-                    width: auto;
-                    vertical-align: middle;
-                    margin-right: 5px;}
+        .hero-logo { display: inline-block !important;
+                     max-width: 100px !important;
+                     max-height: 50px !important;
+                     height: 50px !important;
+                     width: auto !important;}
         /* Container */
         .container {padding: 20px;
                     margin: 20px auto;
