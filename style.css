@@ -26,39 +26,37 @@
         /* Hero Section */
         .hero { text-align: center;
                 padding: 80px 20px;
-                background-image: <img src="./img/papier peint.jpg">
+                background-image: url("./img/papier peint.jpg"); /* Met l'URL correcte de l'image de fond */
                 background-size: cover;
                 background-position: center;
-                background-color: #F5E0C3 !important;
-                color: #4E342E !important;
+                background-color: #F5E0C3 !important; /* Couleur crème douce */
+                color: #4E342E !important; /* Marron clair pour le texte */
                 font-size: 1.5em;
-                font-family: 'poppins', sans-serif;
+                font-family: 'Poppins', sans-serif;
                 line-height: 1.6;
-                border-bottom: 3px solid #4E342E;
-                box-shadow: 0 4PX 6px rgba(0, 0, 0, 0.1);}
+                border-bottom: 3px solid #4E342E; /* Bordure marron pour ajouter un effet élégant */
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre subtile */}
 
-        .hero h1 { font-size: 2.5em;
-                   font-weight: bold;
-                   color: #4E342E;
-                   margin-bottom: 20px;
-                   animation: fadeIn 3s ease-in-out;
-                   line-height: 1.2;
-                   letter-spacing: 2px;}
+       .hero h1 { font-size: 2.5em;
+                  font-weight: bold;
+                  color: #4E342E;
+                  margin-bottom: 20px;
+                  animation: fadeIn 3s ease-in-out; /* Animation de texte */
+                  line-height: 1.2;
+                  letter-spacing: 2px;}
 
-        .hero p { font-size: 1.2em; 
-                  color: #6B4F33;
-                  max-width: 800px;
-                  margin: 0 auto;
-                  animation: fadeIn 3s ease-in-out 1s;}  
+       .hero p { font-size: 1.2em;
+                 color: #6B4F33; /* Marron moyen pour le texte secondaire */
+                 max-width: 800px;
+                 margin: 0 auto;
+                 animation: fadeIn 3s ease-in-out 1s;}
 
-      @keyframes fadeIn {   
-            0% { opacity: 0;
-                 transform: translateY(20px);}   
-
-           100% { opacity: 1;
-                  transform: translateY(0);}
-
-       }       
+       @keyframes fadeIn {
+              0% {opacity: 0;
+                  transform: translateY(20px); }
+            100% { opacity: 1;
+                   transform: translateY(0); }
+}
        
        /* Container */
         .container {padding: 20px;
