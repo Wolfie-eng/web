@@ -24,11 +24,12 @@
         nav a:hover {color: #F5E0C3; /* Crème clair */}
 
         /* Hero Section */
-    .hero {
+   .hero {
     position: relative; /* Nécessaire pour positionner l'image et le texte */
     text-align: center;
     padding: 80px 20px;
-    background-size: cover; /* Force l'image à couvrir toute la section */
+    background-image: url('./img/papier peint.jpg'); /* Image de fond */
+    background-size: cover; /* L'image couvre toute la section */
     background-position: center; /* Centrer l'image */
     background-repeat: no-repeat; /* Évite que l'image se répète */
     background-attachment: fixed; /* L'image reste fixe en arrière-plan */
@@ -38,7 +39,8 @@
     line-height: 1.6;
     border-bottom: 3px solid #4E342E;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    min-height: 100vh; /* Garantit que la section prend toute la hauteur de l'écran */
+    height: 80vh; /* Utilisation d'une hauteur en pourcentage de la fenêtre */
+    max-height: 800px; /* Hauteur maximale de la section */
 }
 
 /* Contenu du texte */
@@ -75,7 +77,6 @@
         transform: translateY(0);
     }
 }
-       
        /* Container */
         .container {padding: 20px;
                     margin: 20px auto;
