@@ -32,7 +32,6 @@
     background-size: cover; /* L'image couvre toute la section */
     background-position: center; /* Centrer l'image */
     background-repeat: no-repeat; /* Évite que l'image se répète */
-    background-attachment: fixed;
     color: #4E342E; /* Couleur du texte */
     font-size: 1.5em;
     font-family: 'Poppins', sans-serif;
