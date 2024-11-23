@@ -28,7 +28,6 @@
     position: relative; /* Nécessaire pour positionner la superposition */
     text-align: center;
     padding: 80px 20px;
-    background-image: url('./img/papier peint.jpg'); /* Image de fond */
     background-size: cover; /* L'image couvre toute la section */
     background-position: center; /* Centre l'image */
     color: #4E342E; /* Couleur marron clair pour le texte */
