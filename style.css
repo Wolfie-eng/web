@@ -29,8 +29,8 @@
                 background-image: <img src="./img/papier peint.jpg">
                 background-size: cover;
                 background-position: center;
-                background-color: #F5E0C3
-                color: #4E342E;
+                background-color: #F5E0C3 !important;
+                color: #4E342E !important;
                 font-size: 1.5em;
                 font-family: 'poppins', sans-serif;
                 line-height: 1.6;
