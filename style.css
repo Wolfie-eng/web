@@ -25,11 +25,10 @@
 
         /* Hero Section */
  .hero {
-    
+    position: relative; /* Nécessaire pour positionner l'image et le texte */
     text-align: center;
     padding: 80px 20px;
     background-image: url('./img/papier peint.11jpg.jpg'); /* Image de fond */
-    background-size: cover; /* L'image couvre toute la section */
     background-position: center; /* Centrer l'image dans la section */
     background-repeat: no-repeat; /* Empêche que l'image se répète */
     background-attachment: fixed; /* L'image reste fixe lors du défilement */
