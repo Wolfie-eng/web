@@ -28,12 +28,10 @@
                padding: 50px 20px;
                background: #F5E0C3; /* Crème */
                color: #4E342E; /* Marron clair */}
-        .hero-logo { display: inline-block !important;
-                     max-width: 100px !important;
-                     max-height: 50px !important;
-                     height: 50px !important;
-                     width: auto !important;}
-        /* Container */
+
+        .hero-logo {  height: 50px; /* Taille contrôlée */
+                       width: auto; /* Respecte les proportions de l'image */}        
+/* Container */
         .container {padding: 20px;
                     margin: 20px auto;
                     max-width: 800px;
@@ -43,6 +41,12 @@
 
         .container h2 {text-align: center;
                        color: #FFFFFF;}
+
+        .logo-container { display: inline-flex; /* Met l'image et le texte sur une même ligne */
+                          align-items: center; /* Aligne verticalement l'image et le texte */
+                          gap: 5px; /* Espace entre l'image et le texte */}
+
+
 
         /* Highlight Section for Specific Areas */
         .highlight-section {background-color: #F5E0C3; 
