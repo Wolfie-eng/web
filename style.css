@@ -25,7 +25,6 @@
 
         /* Hero Section */
      .hero {
-    position: relative; /* Nécessaire pour positionner la superposition */
     text-align: center;
     padding: 80px 20px;
     background-size: cover; /* L'image couvre toute la section */
