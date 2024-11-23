@@ -28,7 +28,6 @@
     position: relative; /* Nécessaire pour positionner l'image et le texte */
     text-align: center;
     padding: 80px 20px;
-    background-image: url('./img/papier peint11pg'); /* Image de fond */
     background-size: cover; /* Force l'image à couvrir toute la section */
     background-position: center; /* Centrer l'image */
     background-repeat: no-repeat; /* Évite que l'image se répète */
