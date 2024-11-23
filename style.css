@@ -24,7 +24,7 @@
         nav a:hover {color: #F5E0C3; /* Crème clair */}
 
         /* Hero Section */
-     .hero {
+     .hero { position: relative;
     text-align: center;
     padding: 80px 20px;
     background-size: cover; /* L'image couvre toute la section */
