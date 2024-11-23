@@ -26,8 +26,40 @@
         /* Hero Section */
         .hero { text-align: center;
                 padding: 80px 20px;
-               background-
-/* Container */
+                background-image: url('papier peint.jpg');
+                background-size: cover;
+                background-position: center;
+                color: #FFFFFF;
+                font-size: 1.5em;
+                font-family: 'poppins', sans-serif;
+                line-height: 1.6;
+                border-bottom: 3px solid #4E342E;
+                box-shadow: 0 4PX 6px rgba(0, 0, 0, 0.1);}
+
+        .hero h1 { font-size: 2.5em;
+                   font-weight: bold;
+                   color: #4E342E;
+                   margin-bottom: 20px;
+                   animation: fadeIn 3s ease-in-out;
+                   line-height: 1.2;
+                   letter-spacing: 2px;}
+
+        .hero p { font-size: 1.2em; 
+                  color: #6B4F33;
+                  max-width: 800px;
+                  margin: 0 auto;
+                  animation: fadeIn 3s ease-in-out 1s;}  
+
+      @keyframes fadeIn {   
+            0% { opacity: 0;
+                 transform: translateY(20px);}   
+
+           100% { opacity: 1;
+                  transform: translateY(0);}
+
+       }       
+       
+       /* Container */
         .container {padding: 20px;
                     margin: 20px auto;
                     max-width: 800px;
