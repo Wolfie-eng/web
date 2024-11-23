@@ -26,7 +26,6 @@
         /* Hero Section */
         .hero { text-align: center;
                 padding: 80px 20px;
-                background-image: url("./img/papier peint.jpg"); /* Met l'URL correcte de l'image de fond */
                 background-size: cover;
                 background-position: center;
                 background-color: #F5E0C3 !important; /* Couleur crème douce */
