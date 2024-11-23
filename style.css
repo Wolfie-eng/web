@@ -38,7 +38,8 @@
     line-height: 1.6;
     border-bottom: 3px solid #4E342E;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-   
+    height: 80vh; /* Utilisation d'une hauteur en pourcentage de la fenêtre */
+    max-height: 800px; /* Hauteur maximale de la section */   
 }
 
 /* Contenu du texte */
