@@ -28,7 +28,6 @@
     position: relative; /* Nécessaire pour positionner la superposition */
     text-align: center;
     padding: 80px 20px;
-    background-image: url('./img/fleur.jpg'); /* Image de fond */
     background-size: cover; /* L'image couvre toute la section */
     background-position: center; /* Centre l'image */
     background-attachment: fixed; /* Rend l'image fixe en arrière-plan */
