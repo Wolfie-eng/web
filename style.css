@@ -33,7 +33,6 @@
     font-size: 1.5em;
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    border-bottom: 3px solid #4E342E;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     height: 40vh; /* Hauteur de la section égale à 100% de la hauteur de la fenêtre */
     overflow: hidden; /* Empêche que des images se superposent en dehors de la section */
