@@ -1,41 +1,60 @@
-	  body{margin:0;
-	       font-family:'poppins',arial, sans-serif;
-		   background-color:#4E342E;
-           color:#FFFFFF;
-		   line-height:1.6;}
-		   
-	  header {background-color: #8C6E63;
-              padding: 20px;
-              display: flex;
-              align-items: center;
-              justify-content: space-between;}
+/* Style global */
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #6b4132; /* Marron foncé */
+    color: #FFFFFF;
+    line-height: 1.6;
+}
 
-      header img {height: 50px;}
-	
-	  nav {display: flex;
-           gap: 15px;}
+/* Header */
+header {
+    background-color: #4b2d23; /* Marron foncé */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-      nav a {color: #FFFFFF;
-             text-decoration: none;
-             font-size: 16px;
-             transition: color 0.3s ease;}
+header img {
+    height: 50px;
+}
 
-      nav a:hover {color: #F5E0C3;}
-        /* Hero Section */
- .hero {
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #F5E0C3; /* Crème clair */
+}
+
+/* Section Hero */
+.hero {
     position: relative; /* Nécessaire pour positionner l'image et le texte */
     text-align: center;
     padding: 80px 20px;
-    background-color: #F5E0C3;
+    background-size: cover; /* L'image couvre toute la section */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Empêche que l'image se répète */
+    background-attachment: fixed; /* L'image reste fixe lors du défilement */
     color: #4E342E; /* Couleur du texte */
     font-size: 1.5em;
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    height: 40vh; /* Hauteur de la section égale à 100% de la hauteur de la fenêtre */
-    overflow: hidden; /* Empêche que des images se superposent en dehors de la section */
+    border-bottom: 3px solid #4E342E;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100vh; /* Hauteur de la section égale à 100% de la hauteur de la fenêtre */
+    overflow: hidden; /* Empêche les débordements d'éléments */
 }
 
-/* Contenu du texte */
 .hero .content {
     position: relative;
     z-index: 2; /* Texte au-dessus de l'image */
@@ -69,53 +88,12 @@
         transform: translateY(0);
     }
 }
-       /* Container */
-        .container {padding: 20px;
-                    margin: 20px auto;
-                    max-width: 800px;
-                    background: 6b4132; /* Marron moyen */
-                    border-radius: 10px;
-                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);}
-
-        .container h2 {text-align: center;
-                       color: #FFFFFF;}
-
-
-
-        /* Highlight Section for Specific Areas */
-        .highlight-section {background-color: #F5E0C3; 
-                            color: #FFFFFF; /* Texte crème */
-                            padding: 15px;
-                            margin: 15px 0;
-                            border-radius: 8px;
-                            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);}
-
-        .highlight-section h3 {margin-top: 0;}
-
-        /* Footer */
-        footer { text-align: center;
-                 background: #4E342E; /* Marron clair */
-                 padding: 10px 0;
-                 color: #FFFFFF;
-                 font-size: 14px;}
-
-        /* Buttons */
-        button { background-color: #4E342E; /* Marron clair */
-                 color: #FFFFFF;
-                 border: none;
-                 padding: 10px 20px;
-                 font-size: 16px;
-                 border-radius: 5px;
-                 cursor: pointer;
-                 transition: background-color 0.3s ease;}
-
-        button:hover {background-color: #8C6E63; /* Marron moyen */}
 
 /* Section des catégories */
 .categories {
     text-align: center;
     padding: 50px 20px;
-    background-color: #4E342E; /* Couleur douce */
+    background-color: #F5E0C3; /* Couleur douce */
 }
 
 .categories h2 {
@@ -124,17 +102,15 @@
     margin-bottom: 40px;
 }
 
-/* Conteneur des cartes de catégories */
 .category-container {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap; /* Pour que les cartes s'ajustent sur plusieurs lignes si nécessaire */
+    flex-wrap: wrap; /* Les cartes passent sur plusieurs lignes si nécessaire */
 }
 
-/* Style des cartes */
 .category-card {
-    background-color: #4E342E; /* Couleur du fond */
+    background-color: #4E342E; /* Fond des cartes */
     color: #FFFFFF; /* Texte blanc */
     width: 200px;
     height: 200px;
@@ -148,16 +124,15 @@
     cursor: pointer;
 }
 
-/* Effet de survol des cartes */
 .category-card:hover {
-    transform: scale(1.1); /* Agrandir la carte au survol */
-    background-color: #8C6E63; /* Changer la couleur de fond au survol */
+    transform: scale(1.1); /* Agrandir légèrement au survol */
+    background-color: #8C6E63; /* Changer la couleur au survol */
 }
 
-/* Responsivité : pour petits écrans */
+/* Responsivité pour les petits écrans */
 @media (max-width: 768px) {
     .category-container {
-        flex-direction: column; /* Affiche les cartes en colonne sur les petits écrans */
+        flex-direction: column; /* Les cartes passent en colonne */
         align-items: center;
     }
 
@@ -166,4 +141,58 @@
         max-width: 250px;
         margin-bottom: 20px; /* Espacement entre les cartes */
     }
+}
+
+/* Container */
+.container {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: #8C6E63; /* Marron moyen */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.container h2 {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* Highlight Section for Specific Areas */
+.highlight-section {
+    background-color: #F5E0C3;
+    color: #FFFFFF; /* Texte crème */
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.highlight-section h3 {
+    margin-top: 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #4E342E; /* Marron clair */
+    padding: 10px 0;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+/* Buttons */
+button {
+    background-color: #4E342E; /* Marron clair */
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8C6E63; /* Marron moyen */
 }
