@@ -70,7 +70,7 @@ nav a:hover {
 .hero p {
     font-size: 1.2em;
     color: #6B4F33;
-    max-width: 800px;
+    max-width: 300px;
     margin: 0 auto;
     animation: fadeIn 3s ease-in-out 1s;
 }
