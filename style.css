@@ -124,7 +124,7 @@ nav a:hover {
 
 .category-card:hover {
     transform: scale(1.1); /* Agrandir légèrement au survol */
-    background-color: #8C6E63; /* Changer la couleur au survol */
+    background-color: #6B4132; /* Changer la couleur au survol */
 }
 
 /* Responsivité pour les petits écrans */
