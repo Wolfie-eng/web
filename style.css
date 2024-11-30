@@ -141,6 +141,15 @@ nav a:hover {
     }
 }
 
+#loginSection, #adminSection {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 400px;
+    background-color: #4b2d23;
+    border-radius: 8px;
+    text-align: center;
+}
+
 /* Container */
 .container {
     padding: 20px;
