@@ -3,7 +3,8 @@
   <head>
     <meta charset ="utf-8"/>
     <link rel="stylesheet" type="text/css" href="style.css" />
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	  <script type="module" src="app.js"></script>
+	  <meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<title>Quotes</title>
  </head>
 <body>
@@ -25,6 +26,22 @@
         <p>Des mots. Des vies. Des changements.</p>
     </div>
 </section>
+	  <!-- Connexion (Firebase) -->
+    <section id="loginSection">
+        <h2>Connexion</h2>
+        <form id="loginForm">
+            <input type="email" id="email" placeholder="Adresse e-mail" required />
+            <input type="password" id="password" placeholder="Mot de passe" required />
+            <button type="submit">Se connecter</button>
+        </form>
+    </section>
+
+    <!-- Section réservée aux utilisateurs connectés -->
+    <section id="adminSection" style="display: none;">
+        <h2>Bienvenue Administrateur !</h2>
+        <p>Vous pouvez maintenant ajouter des témoignages ou gérer le contenu du site.</p>
+        <button onclick="logout()">Se déconnecter</button>
+    </section>
 	
 <section class="categories">
     <h2>Nos Catégories</h2>
