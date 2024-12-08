@@ -222,3 +222,43 @@ button {
 button:hover {
     background-color: #8C6E63; /* Marron moyen */
 }
+.category {
+    margin-bottom: 40px;
+    background-color: #F5E0C3; /* Une couleur douce pour délimiter chaque catégorie */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.category h3 {
+    font-size: 1.5em;
+    color: #4E342E;
+    margin-bottom: 15px;
+}
+
+.artwork-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.artwork-item {
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.artwork-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.artwork-item p {
+    font-size: 1em;
+    color: #333;
+    padding-top: 10px;
+}
+
