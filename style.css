@@ -147,14 +147,7 @@ nav a:hover {
     }
 }
 
-#loginSection, #adminSection {
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 400px;
-    background-color: #4b2d23;
-    border-radius: 8px;
-    text-align: center;
-}
+
 
 /* Container */
 .container {
@@ -170,6 +163,13 @@ nav a:hover {
     text-align: center;
     color: #FFFFFF;
 }
+
+.testimony {background: #F5E0C3;
+                  color: #4E342E;
+				  margin: 15px 0;
+				  padding: 15px;
+				  border-radius: 8px;
+				  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);}
 
 /* Highlight Section for Specific Areas */
 .highlight-section {
