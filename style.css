@@ -145,6 +145,14 @@ nav a:hover {
         max-width: 250px;
         margin-bottom: 20px; /* Espacement entre les cartes */
     }
+    
+     .category-card a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit; /* Conserve la couleur du texte */
+     }
 }
 
 
