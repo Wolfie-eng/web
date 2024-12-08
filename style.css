@@ -115,7 +115,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1em;
+    font-size: 0,5em;
     font-weight: bold;
     border-radius: 10px;
     transition: transform 0.3s ease, background-color 0.3s ease;
