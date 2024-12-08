@@ -123,6 +123,11 @@ nav a:hover {
     cursor: pointer;
 }
 
+ .category-card h3 {
+    font-size: 1em;  /* Ajuste si nécessaire */
+    line-height: 1.2;  /* Centrer verticalement */
+}
+
 .category-card:hover {
     transform: scale(1.1); /* Agrandir légèrement au survol */
     background-color: #4B2D23; /* Changer la couleur au survol */
