@@ -43,14 +43,6 @@
     </div>	
     </body>
 
-<h3>Ajouter un témoignage</h3>
-    <input type="text" id="testimony-title" class="comment-box" placeholder="Titre du témoignage" />
-    <textarea id="testimony-body" class="comment-box" placeholder="Écrivez votre témoignage ici..." rows="4"></textarea>
-    <button onclick="submitTestimony()">Soumettre un témoignage</button>
-    </body>
-   <script>
-  // Liste des témoignages (stockée en mémoire)
-  let testimonies = [];
 
  <!-- Témoignages -->
   <section id="testimonies" class="container">
@@ -67,46 +59,9 @@
   </section>
 	 
 	   //Pour supprimer commentaire
-  function deleteTestimony(index) {
-    testimonies.splice(index, 1);
+  function deleteTestimony(index) { testimonies.splice(index, 1);
 	displayTestimonies();
 	}
 
-  // Fonction pour soumettre un commentaire
-  function submitComment(testimonyIndex) {
-    const commentInput = document.getElementById(`comment-input-${testimonyIndex}`);
-    const commentText = commentInput.value.trim();
-
-    if (commentText) {
-      const testimony = testimonies[testimonyIndex];
-      testimony.comments.push(commentText);
-
-  // Ajoute le commentaire à la section correspondante
-      const commentsSection = document.getElementById(`comments-${testimonyIndex}`);
-      const commentDiv = document.createElement('div');
-      commentDiv.className = 'comment';
-      commentDiv.textContent = commentText;
-
-      commentsSection.appendChild(commentDiv);
-      commentInput.value = ''; // Vide le champ de saisie
-    } else {
-      alert('Veuillez saisir un commentaire avant de le soumettre.');
-    }
-  }
-
-  // Charge les témoignages existants (fonctionnalité optionnelle)
-  function loadTestimonies() {
-    // Simule des données déjà existantes
-    testimonies = [
-      { title: 'Exemple 1', body: 'Voici un témoignage exemple.', comments: ['Super témoignage !'] },
-      { title: 'Exemple 2', body: 'Un autre témoignage inspirant.', comments: [] }
-    ];
-    displayTestimonies();
-  }
-
-  // Charger les témoignages au chargement de la page
-  window.onload = () => {
-    loadTestimonies();
-  };
 
 </script>
