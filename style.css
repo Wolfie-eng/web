@@ -101,12 +101,11 @@ nav a:hover {
 }
 
 .category-container {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
-    flex-wrap: wrap; /* Les cartes passent sur plusieurs lignes si nécessaire */
+    justify-items: center;
 }
-
 .category-card {
     background-color: #F5E0C3; /* Fond des cartes */
     color: #8C6E63; /* Texte blanc */
@@ -136,16 +135,14 @@ nav a:hover {
 /* Responsivité pour les petits écrans */
 @media (max-width: 768px) {
     .category-container {
-        flex-direction: column; /* Les cartes passent en colonne */
-        align-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 15px;
     }
-@media (max-width: 768px) {
     .category-card {
-        width: 90%; /* S'adapte à l'écran */
-        margin: 10px auto;
+        width: 120px;
+        height: 120px;
     }
-}
-	
+}	
     .category-card {
         width: 100%;
         max-width: 250px;
