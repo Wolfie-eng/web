@@ -98,6 +98,53 @@ Nous souhaitons alors offrir un support d'expression, une safe place, aux femmes
   <footer>
     <p>&copy; 2024 Quotes. Tous droits réservés.</p>
   </footer>
+<!-- Inclure AOS dans ton projet -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
 
+<!-- Exemple d'élément avec effet AOS -->
+<div data-aos="fade-up">
+  <h2>Un titre qui apparaît au défilement</h2>
+  <p>Ce contenu sera révélé avec une animation en montant.</p>
+</div>
+
+<!-- Initialisation AOS -->
+<script>
+  AOS.init();
+</script>
+	
+<button id="theme-toggle">Changer de thème</button>
+	
+const themeToggle = document.getElementById('theme-toggle');
+themeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark-theme');
+});
+	<button id="open-modal">Voir plus</button>
+
+<div id="modal" class="modal hidden">
+  <div class="modal-content">
+    <span id="close-modal" class="close">&times;</span>
+    <h2>Détails supplémentaires</h2>
+    <p>Voici plus d'informations affichées dans une boîte de dialogue.</p>
+  </div>
+</div>
+const openModal = document.getElementById('open-modal');
+const closeModal = document.getElementById('close-modal');
+const modal = document.getElementById('modal');
+
+openModal.addEventListener('click', () => {
+  modal.classList.add('visible');
+  modal.classList.remove('hidden');
+});
+
+closeModal.addEventListener('click', () => {
+  modal.classList.add('hidden');
+  modal.classList.remove('visible');
+});
+
+<div class="parallax"></div>
+<div class="content">
+  <h2>Du contenu normal ici</h2>
+</div>
   </body>
 </html> 
