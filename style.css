@@ -24,19 +24,19 @@ header {
 
 
 
-nav { }
+nav {float: left 200px;}
 
 nav a {
       display: block;
       border: solid 3px grey;
-	  background-color: black;
+      background-color: black;
       display: black;
-	  color: dodgerblue;
-	  text-align: center;
-	  margin: 5px;
-	  padding: 10px;
-	  text-decoration: none;
-	float: left 200px;
+      color: dodgerblue;
+      text-align: center;
+      margin: 5px;
+      padding: 10px;
+      text-decoration: none;
+      
 	  
 }
 
