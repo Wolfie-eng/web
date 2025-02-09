@@ -7,7 +7,7 @@ main {
   border:solid 1px black;
   display: grid;
   grid-template-columns: 300px 700px;
-  grid-column: span 2; }
+  }
 
 header {
   border: solid 1px black;
@@ -18,7 +18,7 @@ header {
   font-family:Georgia;
   text-align:center;
   padding-top: 50px;
- 
+  grid-column: span 2; 
 }
 
 
