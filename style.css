@@ -13,10 +13,10 @@ main {
 header {
   border: solid 1px black;
   background-image: url("img/fleur.jpg");
-  height:250px;
+  height:350px;
   color:white;
   font-size:3em;
-  font-family:arial;
+  font-family:Script;
   text-align:center;
   padding-top: 50px;
   grid-column: span 2;
