@@ -12,7 +12,7 @@ main {
 
 header {
   border: solid 1px black;
-  background-image: url("papier peint.jpg");
+  background-image: url("img/papier peint.jpg");
   height:250px;
   color:white;
   font-size:3em;
