@@ -22,9 +22,9 @@ header {
   grid-column: span 2;
 }
 
-nav { 
-  
-}
+img { float: left;}
+
+nav { }
 
 nav a {
       display: block;
