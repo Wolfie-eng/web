@@ -28,9 +28,9 @@ nav {float: left 200px;}
 nav a {
       display: block;
       border: solid 3px grey;
-      background-color: black;
+      background-color: lightgrey;
       display: black;
-      color: dodgerblue;
+      color: brown;
       text-align: center;
       margin: 5px;
       padding: 10px;
