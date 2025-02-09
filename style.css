@@ -35,7 +35,7 @@ nav a {
       margin: 5px;
       padding: 10px;
       text-decoration: none;
-      
+      grid-column: span 1;       
 	  
 }
 
