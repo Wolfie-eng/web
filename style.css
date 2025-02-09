@@ -1,5 +1,4 @@
-body {
-  
+body {grid-column: span 2;  
 }
 
 main {
@@ -13,13 +12,13 @@ main {
 header {
   border: solid 1px black;
   background-image: url("img/fleur.jpg");
-  height:350px;
+  height:250px;
   color:white;
-  font-size:3em;
-  font-family:Script;
+  font-size:5em;
+  font-family:Coronet;
   text-align:center;
   padding-top: 50px;
-  grid-column: span 2;
+ 
 }
 
 
