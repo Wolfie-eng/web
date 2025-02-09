@@ -1,1 +1,89 @@
+body {
+  
+}
 
+main {
+  width  : 1000px;
+  margin : 0px auto;
+  border:solid 1px black;
+  display: grid;
+  grid-template-columns : 300px 700px;
+}
+
+header {
+  border: solid 1px black;
+  background-image: url("header.jpg");
+  height:250px;
+  color:white;
+  font-size:3em;
+  font-family:arial;
+  text-align:center;
+  padding-top: 50px;
+  grid-column : span 2;
+}
+
+nav { 
+  
+}
+
+nav a {
+      display: block;
+      border: solid 3px grey;
+	  background-color: black;
+      display: black;
+	  color: dodgerblue;
+	  text-align: center;
+	  margin: 5px;
+	  padding: 10px;
+	  text-decoration: none;
+	  
+}
+
+section{
+  padding:20px;
+}
+
+article {
+  margin:10px;
+  border:solid 1px dodgerblue;
+  
+}
+
+article h1 {color: white;
+            background-color: dodgerblue;
+			text-align: center;
+			padding: 5px;
+			margin:0 0 5px 0;
+
+}
+
+article img {
+	border: solid 5px dodgerblue;
+	border-radius: 100px;
+	float:left;
+	margin: 5px;
+	
+}
+
+article p {
+	
+	
+}
+
+.date {
+	color: white;
+	background-color: black;
+	padding: 5px;
+	clear: both;
+	
+}
+
+@media (max-width:1000px) {
+main {
+width: 100%;
+grid-template-columns: auto;
+}
+header {
+grid-column: 1;
+}
+}
