@@ -12,7 +12,7 @@ main {
 
 header {
   border: solid 1px black;
-  background-image: url("img/fleurs.jpg");
+  background-image: url("img/fleur.jpg");
   height:250px;
   color:white;
   font-size:3em;
