@@ -6,7 +6,7 @@ main {
   margin: 0px auto;
   border:solid 1px black;
   display: grid;
-  grid-template-columns: 300px 700px;
+  grid-template-columns: auto;
   }
 
 header {
