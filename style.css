@@ -22,7 +22,7 @@ header {
   grid-column: span 2;
 }
 
-img { float: left;}
+
 
 nav { }
 
@@ -36,6 +36,7 @@ nav a {
 	  margin: 5px;
 	  padding: 10px;
 	  text-decoration: none;
+	float: left 200px;
 	  
 }
 
