@@ -104,3 +104,83 @@ footer p {
     padding: 15px;
   }
 }
+
+/* Style de base pour chaque œuvre */
+.oeuvre {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.oeuvre-image {
+    flex: 1;
+    max-width: 300px;
+    margin-right: 20px;
+}
+
+.oeuvre-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.oeuvre-contenu {
+    flex: 2;
+}
+
+.oeuvre h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.theme {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.reflexion {
+    margin-top: 20px;
+}
+
+.reflexion h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.reflexion ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.reflexion li {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.bouton-discussion {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.bouton-discussion:hover {
+    background-color: #0056b3;
+}
