@@ -107,7 +107,7 @@ footer p {
 
 /* Style de base pour chaque œuvre */
 .oeuvre {
-    display: left;
+    display: flex;
     flex-wrap: wrap;
     margin-bottom: 40px;
     padding: 20px;
@@ -129,6 +129,7 @@ footer p {
 
 .oeuvre-contenu {
     flex: 2;
+    display: block;
 }
 
 .oeuvre h2 {
