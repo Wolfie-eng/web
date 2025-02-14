@@ -107,7 +107,7 @@ footer p {
 
 /* Style de base pour chaque œuvre */
 .oeuvre {
-    display: flex;
+    display: left;
     flex-wrap: wrap;
     margin-bottom: 40px;
     padding: 20px;
