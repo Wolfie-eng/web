@@ -84,25 +84,22 @@
 	</div>
      </div>        
     </section>    
-  
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <!-- À propos -->
-    <section id="about" class="container">
-      <h2>À propos</h2>
-      <p>
+
+<section id="about" class="about">
+      <h2>About Us</h2>
+      <div class="about-content">
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Team of professionals working together" width="500" height="333">
+        </div>
+        <div class="about-text">
+          <p>
         Nous sommes cinq étudiantes en troisième année de LEA, à l'université de Lille. Dans le cadre de notre projet PIC, nous avons décidé de mettre en lumière les obstacles auxquels les femmes sont confrontées dans la société actuelle, de manière claire, positive et sans tabou. Cette idée est née de notre constat que la condition féminine est très peu ou très mal exprimée, encore à notre époque. Nous souhaitons alors offrir un support d'expression, une safe place, aux femmes de la faculté, pour elles-mêmes et en soutien aux autres.
-      </p>
-    </section>
+          </p>    
+	</div>
+      </div>
+</section>
+	    
+     
 
     <!-- Contact -->
     <section id="contact" class="container">
@@ -116,6 +113,46 @@
     <!-- Pied de page -->
     <footer>
       <p>&copy; 2024 Quotes. Tous droits réservés.</p>
+	    <div class="social-links">	 
+	      <a href="https://www.instagram.com/quotes_flcs?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+        <img src="./img/Design 2.jpg" alt="Instagram" style="width: 60px; height: 60px;" />
+      </a>
     </footer>
-  </body>
+	    <script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Lazy loading images
+    document.addEventListener("DOMContentLoaded", function() {
+      var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+
+      if ("IntersectionObserver" in window) {
+        let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              let lazyImage = entry.target;
+              lazyImage.src = lazyImage.dataset.src;
+              lazyImage.classList.remove("lazy");
+              lazyImageObserver.unobserve(lazyImage);
+            }
+          });
+        });
+
+        lazyImages.forEach(function(lazyImage) {
+          lazyImageObserver.observe(lazyImage);
+        });
+      } else {
+        // Fallback for browsers without IntersectionObserver support
+      }
+    });
+
+    // Add any additional JavaScript functionality here
+  </script>  </body>
 </html>
