@@ -107,17 +107,21 @@ body, header, .hero {
     }    
     
     .hero {
-    background-image: url('img/Atardecer.jpg');
-    background-size: 1200px 800px;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white; 
-  }
+  background-image: url('img/Atardecer.jpg');
+  background-size: cover; /* Ajuste l'image pour couvrir toute la section */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Remplit toute la hauteur de la fenêtre */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: absolute; /* Permet de la positionner précisément */
+  top: 0; /* Remonte la section hero */
+  left: 0; /* Aligne la section sur le côté gauche */
+  right: 0; /* Aligne la section sur le côté droit */
+}
   
   .hero-content {
     max-width: 800px;
