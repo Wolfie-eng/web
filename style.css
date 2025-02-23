@@ -101,7 +101,7 @@
   
   .hero {
     background-image: url('img/Atardecer.jpg');
-    background-size: 80%;
+    background-size: 1200px 800px;
     background-position: center;
     height: 100vh;
     display: flex;
