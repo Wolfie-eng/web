@@ -117,10 +117,7 @@ body, header, .hero {
   justify-content: center;
   text-align: center;
   color: white;
-  position: absolute; /* Permet de la positionner précisément */
-  top: 0; /* Remonte la section hero */
-  left: 0; /* Aligne la section sur le côté gauche */
-  right: 0; /* Aligne la section sur le côté droit */
+ margin-top: 80px;
 }
   
   .hero-content {
