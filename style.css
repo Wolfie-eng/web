@@ -141,25 +141,25 @@
     background-color: var(--hover-color);
   }
   
-  .services, .blogs, .get-app {
+  .testimonies, .blogs, .get-app {
     padding: 5rem 10%;
     background-color: var(--background-color);
   }
   
-  .services h2, .blogs h2, .get-app h2 {
+  .testimonies h2, .blogs h2, .get-app h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
     color: var(--accent-color);
   }
   
-  .service-grid {
+  .testimonies-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
   }
   
-  .service-card {
+  .testimonies-card {
     background-color: var(--card-background);
     border-radius: 10px;
     padding: 2rem;
@@ -167,17 +167,17 @@
     transition: transform 0.3s ease;
   }
   
-  .service-card:hover {
+  .testimonies-card:hover {
     transform: translateY(-10px);
   }
   
-  .service-icon {
+  .testimonies-icon {
     font-size: 3rem;
     margin-bottom: 1rem;
     color: var(--primary-color);
   }
   
-  .service-card h3 {
+  .testimonies-card h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     color: var(--accent-color);
@@ -215,51 +215,8 @@
     flex: 1;
   }
   
-  .blog-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-  }
   
-  .blog-card {
-    background-color: var(--card-background);
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-  }
-  
-  .blog-card:hover {
-    transform: translateY(-10px);
-  }
-  
-  .blog-image {
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .blog-content {
-    padding: 1.5rem;
-  }
-  
-  .blog-content h3 {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    color: var(--accent-color);
-  }
-  
-  .blog-content p {
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-  }
-  
-  .read-more {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: 600;
-  }
-  
-  .get-app {
+   .get-app {
     text-align: center;
   }
   
