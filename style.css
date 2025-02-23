@@ -108,7 +108,7 @@ body, header, .hero {
     
     .hero {
   background-image: url('img/Atardecer.jpg');
-  background-size: 1000px ; /* Ajuste l'image pour couvrir toute la section */
+  background-size: cover ; /* Ajuste l'image pour couvrir toute la section */
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh; /* Remplit toute la hauteur de la fenêtre */
