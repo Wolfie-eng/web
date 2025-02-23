@@ -159,7 +159,7 @@ body, header, .hero {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: var(--accent-color);
+    color: var(--secondary-color);
   }
   
   .testimonies-grid {
