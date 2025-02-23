@@ -99,8 +99,13 @@
   main {
     padding-top: 80px;
   }
-  
-  .hero {
+
+body, header, .hero {
+    margin: 0;
+    padding: 0;
+    }    
+    
+    .hero {
     background-image: url('img/Atardecer.jpg');
     background-size: 1200px 800px;
     background-position: center;
