@@ -199,6 +199,9 @@ body, header, .hero {
   .social-links a:hover {
     color: var(--hover-color);
   }
+
+ .footer { color: var(--card-background);
+           align-items: center;}
   
   @media (max-width: 768px) {
     .header-content {
