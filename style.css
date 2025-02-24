@@ -201,7 +201,7 @@ body, header, .hero {
   }
 
   .footer { color: var(--card-background);
-           display: center; }
+           items-align: center; }
   
   @media (max-width: 768px) {
     .header-content {
