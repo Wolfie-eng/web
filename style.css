@@ -140,14 +140,14 @@ body, header, .hero {
     font-size: 2.5rem;
     margin-bottom: 3rem;
     color: var(--secondary-color);
-   float: left;
+   
   }
   
   .testimonies-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
-    float: left;
+    
   }
   
   .testimonies-card {
