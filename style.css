@@ -200,7 +200,7 @@ body, header, .hero {
     color: var(--hover-color);
   }
 
-  .footer { 
+  footer { 
     color: var(--card-background); 
     align-items: center; 
     display: flex; /* Assuming you want to align items within a flex container */
