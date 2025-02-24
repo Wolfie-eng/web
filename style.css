@@ -200,8 +200,13 @@ body, header, .hero {
     color: var(--hover-color);
   }
 
-  .footer { color: var(--card-background);
-           items-align: center; }
+  .footer { 
+    color: var(--card-background); 
+    align-items: center; 
+    display: flex; /* Assuming you want to align items within a flex container */
+    justify-content: center; /* Assuming you want to center items horizontally */
+    padding: 1rem; /* Adding some padding for better spacing */
+}
   
   @media (max-width: 768px) {
     .header-content {
