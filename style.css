@@ -142,7 +142,7 @@ body, header, .hero {
     text-align: center;
     transition: transform 0.3s ease;
   }
-.testimonies-card a { link: none;}
+.testimonies-card a { text-decoration: none;}
   
   .testimonies-card:hover {
     transform: translateY(-10px);
