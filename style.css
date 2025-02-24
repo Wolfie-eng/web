@@ -115,21 +115,6 @@ body, header, .hero {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   }
   
-  .cta-button {
-    display: inline-block;
-    background-color: var(--primary-color);
-    color: white;
-    padding: 0.8rem 1.5rem;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-  }
-  
-  .cta-button:hover {
-    background-color: var(--hover-color);
-  }
-  
   .testimonies, .blogs, .get-app {
     padding: 5rem 10%;
     background-color: var(--background-color);
@@ -205,41 +190,6 @@ body, header, .hero {
   .about-text {
     flex: 1;
   }
-  
-  
-   .get-app {
-    text-align: center;
-  }
-  
-  .app-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-  
-  .app-button {
-    display: inline-block;
-    background-color: var(--card-background);
-    color: var(--text-color);
-    padding: 0.8rem 1.5rem;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-  }
-  
-  .app-button:hover {
-    background-color: var(--hover-color);
-  }
-  
-  footer {
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-    text-align: center;
-    padding: 2rem 0;
-  }
-  
   .social-links {
     margin-top: 1rem;
   }
