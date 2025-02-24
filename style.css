@@ -200,8 +200,10 @@ body, header, .hero {
     color: var(--hover-color);
   }
 
- .footer { color: var(--card-background);
-           text-align: center;}
+  .footer { color: var(--card-background);
+           text-align: center;
+           
+         }
   
   @media (max-width: 768px) {
     .header-content {
