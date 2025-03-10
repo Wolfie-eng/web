@@ -1,60 +1,38 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <title>Galerie - QUOTES</title>
-  </head>
-  <body>
-    <header>
-      <h1>QUOTES</h1>
-    </header>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie Photo Interactive</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+</head>
+<body>
 
-    <nav>
-      <a href="./index.html">Accueil</a>
-      <a href="./testimonies.html">Témoignages</a>
-      <a href="./dates.html">À retenir</a>
-      <a href="./Galerie.html">Galerie</a>
-      <a href="#about">À propos</a>
-      <a href="#contact">Contact</a>
-    </nav>
-
-   <!-- Section pour une œuvre -->
-<section class="oeuvre">
-    <div class="oeuvre-image">
-        <img src="img/Marina-Abramovic-Rhythm-0-1974.jpg" alt="Description de l'image">
+    <div class="gallery-container">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="image1.jpg" alt="Image 1"></div>
+                <div class="swiper-slide"><img src="image2.jpg" alt="Image 2"></div>
+                <div class="swiper-slide"><img src="image3.jpg" alt="Image 3"></div>
+            </div>
+            <!-- Boutons de navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
     </div>
-    <div class="oeuvre-contenu">
-        <h2>Rhythm 0 - Marina Abramović</h2>
-        <p class="theme">Thèmes : Harcèlement, Vulnérabilité, Pouvoir</p>
-        <p class="description">
-            "Rhythm 0" est une performance artistique de 1974 où Marina Abramović a permis au public d'utiliser 72 objets sur elle pendant 6 heures. Cette œuvre explore les limites de la vulnérabilité et la nature de la violence.
-        </p>
-        <div class="reflexion">
-            <h3>Questions de réflexion :</h3>
-            <ul>
-                <li>Comment réagiriez-vous si vous étiez à la place de l'artiste ?</li>
-                <li>Qu'est-ce que cette performance nous apprend sur la nature humaine ?</li>
-            </ul>
-       
-  <div class="oeuvre-image">
-        <img src="img/rockwell-the-problem-we-all-live-with.jpg" alt="Description de l'image">
- </div>
-  
- <div class="oeuvre-contenu">  <h2> The problem we all live with - Norman Rockwell</h2>
-        <p class="theme">Thème : Racisme, classe social</p>
-        <p class="description">
-             "the problem we all live with" met en avant une jeune fille afro-américaine se rendant à l'école sous escorte fédérale, illustrant la manière dont les enfants peuvent être infantilisés et protégés dans des contextes de lutte pour les droits civiques.
-        </p>
-</section>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
     <footer>
       <p>&copy; 2024 QUOTES. Tous droits réservés.</p>
     </footer>
-
-    <script src="script.js"></script>
-  
+ 
   </body>
 </html>
