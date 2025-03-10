@@ -207,7 +207,7 @@ body, header, .hero {
     justify-content: center; /* Assuming you want to center items horizontally */
     padding: 1rem; /* Adding some padding for better spacing */
 }
-  .container p { 
+  .quotes { 
       color: var(--primary-color);
       align-items: center;
       display: flex; 
@@ -216,10 +216,7 @@ body, header, .hero {
       border-radius: 10px
       box-shadow:0 4px 8px rgba(0,0,0,0.1)
   }
-.container h2 { 
-    color: white
-    align-items: center; 
-}
+
   @media (max-width: 768px) {
     .header-content {
       flex-direction: column;
