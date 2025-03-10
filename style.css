@@ -201,7 +201,7 @@ body, header, .hero {
   }
 
   footer { 
-    color: var(--card-background); 
+    color: white; 
     align-items: center; 
     display: flex; /* Assuming you want to align items within a flex container */
     justify-content: center; /* Assuming you want to center items horizontally */
