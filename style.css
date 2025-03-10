@@ -220,7 +220,8 @@ body, header, .hero {
     font-size: 40px;
     font-weight: bold;
     color: #ff6680;
-    text-align: left;
+    align-items: left;
+    display: flex;
 }
 
 .testimonial-text {
