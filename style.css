@@ -111,7 +111,7 @@ body, header, .hero {
   
   .testimonies, .blogs, .get-app {
     padding: 5rem 10%;
-    background-color: var(--background-color);
+    background-color: var(--primary-color);
   }
   
   .testimonies h2, .blogs h2, .get-app h2 {
