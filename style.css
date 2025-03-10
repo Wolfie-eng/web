@@ -81,7 +81,7 @@ body, header, .hero {
     }    
     
     .hero {
-  background-image: url('img/fleur.jpg');
+  background-image: url('img/papier peint1.jpg');
   background-size: cover ; /* Ajuste l'image pour couvrir toute la section */
   background-position: center;
   background-repeat: no-repeat;
