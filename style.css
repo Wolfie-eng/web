@@ -207,7 +207,7 @@ body, header, .hero {
     justify-content: center; /* Assuming you want to center items horizontally */
     padding: 1rem; /* Adding some padding for better spacing */
 }
-  container { 
+  .container { 
       color: var(--primary-color);
       align-items: center;
       display: flex; 
