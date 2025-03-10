@@ -217,7 +217,8 @@ body, header, .hero {
       box-shadow:0 4px 8px rgba(0,0,0,0.1)
   }
 .container h2 { 
-    color: white; 
+    color: white
+    align-items: center; 
 }
   @media (max-width: 768px) {
     .header-content {
