@@ -213,7 +213,9 @@ body, header, .hero {
       display: flex; 
       justify-content: center;
       padding: 1rem; }
-
+.container h2 { 
+    color: white; 
+}
   @media (max-width: 768px) {
     .header-content {
       flex-direction: column;
