@@ -207,15 +207,37 @@ body, header, .hero {
     justify-content: center; /* Assuming you want to center items horizontally */
     padding: 1rem; /* Adding some padding for better spacing */
 }
-  .quotes { 
-      color: var(--primary-color);
-      align-items: center;
-      display: flex; 
-      justify-content: center;
-      padding: 1rem;
-      border-radius: 10px
-      box-shadow:0 4px 8px rgba(0,0,0,0.1)
-  }
+  .testimonial-container {
+    background: linear-gradient(to right, #ffe0e5, #ffe4e1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    text-align: left;
+}
+
+.testimonial-quote {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ff6680;
+    text-align: left;
+}
+
+.testimonial-text {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.testimonial-metadata {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #777;
+    text-transform: uppercase;
+}
+
+
 
   @media (max-width: 768px) {
     .header-content {
