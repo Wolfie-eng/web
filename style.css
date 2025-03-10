@@ -220,7 +220,7 @@ body, header, .hero {
     font-size: 40px;
     font-weight: bold;
     color: #ff6680;
-    align-items: left;
+    align-items: center;
     display: flex;
 }
 
