@@ -16,7 +16,7 @@
   
   body {
     font-family: 'Poppins', sans-serif;
-    background-color: var(--background-color);
+    background-color: white;
     color: var(--text-color);
     line-height: 1.6;
     padding-top: 0;
