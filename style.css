@@ -208,7 +208,7 @@ body, header, .hero {
     padding: 1rem; /* Adding some padding for better spacing */
 }
   .testimonial-container {
-    background: linear-gradient(to right, #ffe0e5, #ffe4e1);
+    background-color: var(--card-background);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
@@ -226,7 +226,7 @@ body, header, .hero {
 
 .testimonial-text {
     font-size: 16px;
-    color: #333;
+    color: white;
     line-height: 1.6;
 }
 
