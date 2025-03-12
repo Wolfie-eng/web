@@ -243,12 +243,13 @@ body, header, .hero {
 
 * {box-sizing:border-box}
 
-/* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: center;
-  margin-top: auto;
+    position: relative;
+    max-width: 600px; /* Taille du diaporama */
+    margin: 50px auto; /* Ajoute un espace de 50px en haut et en bas */
+    padding-top: 20px; /* Optionnel : ajoute un léger espace à l’intérieur */
 }
+
 
 /* Hide the images by default */
 .mySlides {
