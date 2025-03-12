@@ -246,7 +246,7 @@ body, header, .hero {
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
-  position: relative;
+  position: center;
   margin: auto;
 }
 
