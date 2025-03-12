@@ -247,7 +247,7 @@ body, header, .hero {
 .slideshow-container {
   max-width: 1000px;
   position: center;
-  margin: auto;
+  margin-top: auto;
 }
 
 /* Hide the images by default */
