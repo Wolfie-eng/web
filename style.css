@@ -284,7 +284,7 @@ body, header, .hero {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
-    background-color: #F2D4C2;
+    background-color: #40241E;
 }
 
 .gallery-item:hover {
