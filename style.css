@@ -252,7 +252,7 @@ body, header, .hero {
     overflow: hidden;
     border-radius: 10px; /* Coins arrondis */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background: #f5f5f5; /* Fond pour éviter les coupures d’image */
+    background: #5D4037; /* Fond pour éviter les coupures d’image */
 }
 
 .slide {
