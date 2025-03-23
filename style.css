@@ -329,11 +329,6 @@ body, header, .hero {
   background-color: #717171;
 }
 
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  
-}
 
 @keyframes defilement {
   0% {transform: translateX (0); }
