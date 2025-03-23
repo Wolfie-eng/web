@@ -243,13 +243,23 @@ body, header, .hero {
 
 * {box-sizing:border-box}
 
+
 .slideshow-container {
-    position: relative;
-    max-width: 600px; /* Taille du diaporama */
-    margin: 50px auto; /* Ajoute un espace de 50px en haut et en bas */
-    padding-top: 20px; /* Optionnel : ajoute un léger espace à l’intérieur */
+    width: auto;
+    max-width: 1280px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
+.slideshow img {
+    width: auto;
+    max-width: 1280px;
+    object-fit: cover;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    }
 
 /* Hide the images by default */
 .mySlides {
@@ -322,12 +332,16 @@ body, header, .hero {
 /* Fading animation */
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  
 }
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+@keyframes defilement {
+  0% {transform: translateX (0); }
+ 20% {transform: translateX (-100%); }
+ 40% {transform: translateX (-200%); }
+ 60% {transform: translateX (-300%); }
+ 80% {transform: translateX (-400%); }
+ 100% {transform: translateX (-500%); }
 }
 
 
