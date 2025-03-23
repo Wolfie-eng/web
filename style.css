@@ -243,23 +243,12 @@ body, header, .hero {
 
 * {box-sizing:border-box}
 
-
+/* Slideshow container */
 .slideshow-container {
-    width: auto;
-    max-width: 1280px;
-    height: 300px;
-    margin: 0 auto;
-    overflow: hidden;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
-
-.slideshow img {
-    width: auto;
-    max-width: 1280px;
-    object-fit: cover;
-    padding-left: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    }
 
 /* Hide the images by default */
 .mySlides {
@@ -329,6 +318,16 @@ body, header, .hero {
   background-color: #717171;
 }
 
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 
 @keyframes defilement {
   0% {transform: translateX (0); }
