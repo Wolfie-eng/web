@@ -188,8 +188,11 @@ body, header, .hero {
   .about-text h1 {
       align-items: left;
       color: #D7CCC8;
-      font-size: 3rem;
+      font-size: 1rem;
   }
+
+  .about-text nav li {
+      align-items: left;}
   .social-links {
     margin-top: 1rem;
   }
