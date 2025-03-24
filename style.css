@@ -185,6 +185,11 @@ body, header, .hero {
   .about-text {
     flex: 1;
   }
+  .about-text h1 {
+      align-items: left;
+      color: #D7CCC8;
+      font-size: 3rem;
+  }
   .social-links {
     margin-top: 1rem;
   }
