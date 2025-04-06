@@ -356,10 +356,22 @@ p {
     text-align: center; /* Centre le texte horizontalement */
 }
 
+.mention h1 {
+    margin-bottom: 20px; /* Espace après chaque titre de catégorie */
+    font-size: 24px; /* Ajuste la taille des titres */
+    color: var(--accent-color);
+    text-align: center;
+}
+
+.mention ul {
+    margin-bottom: 30px; /* Espace après chaque liste */
+    list-style-type: none;
+    padding: 0;
+}
+
 .mention-text {
-    font-size: 18px; /* Agrandit la taille de la police pour plus de lisibilité */
+    font-size: 18px; 
     color: white;
     line-height: 1.8;
     margin-bottom: 20px; /* Espace entre les paragraphes */
 }
-
